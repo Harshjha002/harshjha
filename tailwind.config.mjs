@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -5,6 +6,9 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  daisyui: {
+    themes: ["retro", "night", "sunset"],
+  },
   theme: {
     extend: {
       colors: {
@@ -13,5 +17,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui'),],
 };
