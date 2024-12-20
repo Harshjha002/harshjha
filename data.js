@@ -52,7 +52,8 @@ export const myProjects = [
         liveLink: "https://ecommerce-app.com",
         sortDescription: "An e-commerce web application allowing users to browse and purchase products.",
         largeDescription: "This app is built with React and Express, providing a seamless shopping experience with features like product filtering, search, and cart management. Users can view products, add them to their cart, and proceed to checkout.",
-        techStack: ['React', 'Express', 'MongoDB', 'Node.js']
+        techStack: ['React', 'Express', 'MongoDB', 'Node.js'],
+        priority:true,
     },
     {
         id:3,
@@ -70,7 +71,8 @@ export const myProjects = [
         liveLink: "https://yourportfolio.com",
         sortDescription: "A personal portfolio website showcasing my skills and projects.",
         largeDescription: "This is my personal portfolio built with React. It includes various sections like 'About Me', 'Projects', and 'Contact'. The site is responsive and features animations to enhance the user experience.",
-        techStack: ['React', 'CSS', 'JavaScript']
+        techStack: ['React', 'CSS', 'JavaScript'],
+        priority:true,
     },
     {
         id:5,
@@ -85,9 +87,70 @@ export const myProjects = [
         id:6,
         name: "Task Manager",
         gitlink: "https://github.com/yourusername/task-manager",
-        liveLink: "https://task-manager.com",
         sortDescription: "A task management application to track and organize tasks.",
         largeDescription: "A simple task manager that allows users to add, edit, and delete tasks. It features task prioritization, deadlines, and categorization. Built with React for the frontend and Node.js with Express for the backend.",
-        techStack: ['React', 'Node.js', 'Express', 'MongoDB']
+        techStack: ['React', 'Node.js', 'Express', 'MongoDB'],
+        priority:true,
     },
 ];
+
+export const myTechStack = [
+    {
+      label: "Programming Language",
+      stack: ["JavaScript", "TypeScript", "Java", "Golang", "Python"],
+    },
+    {
+      label: "Frontend",
+      stack: ["JavaScript", "TypeScript", "React", "Tailwind CSS", "HTML", "CSS", "Angular"],
+    },
+    {
+      label: "Backend",
+      stack: ["JavaScript", "TypeScript", "Spring Boot", "Golang", "Node.js", "Express"],
+    },
+    {
+      label: "ORM/ODM",
+      stack: ["Prisma", "Mongoose"],
+    },
+    {
+      label: "Database",
+      stack: ["PostgreSQL", "MongoDB"],
+    },
+    {
+      label: "Framework",
+      stack: ["Next.js", "Angular"],
+    },
+    {
+      label: "Libraries",
+      stack: ["React", "React Router", "TanStack Query", "Redux Toolkit", "Zustand", "Auth.js"],
+    },
+    {
+      label: "All",
+      stack: [
+        "JavaScript",
+        "TypeScript",
+        "Java",
+        "Golang",
+        "Python",
+        "React",
+        "Tailwind CSS",
+        "HTML",
+        "CSS",
+        "Angular",
+        "Spring Boot",
+        "Node.js",
+        "Express",
+        "Prisma",
+        "Mongoose",
+        "PostgreSQL",
+        "MongoDB",
+        "Next.js",
+        "React Router",
+        "TanStack Query",
+        "Redux Toolkit",
+        "Zustand",
+        "Auth.js",
+      ],
+    },
+  ];
+  
+  

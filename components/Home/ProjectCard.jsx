@@ -2,25 +2,33 @@ import Link from 'next/link';
 import React from 'react';
 
 const ProjectCard = ({ project }) => {
-    
   return (
- <>
-      <div key={project.id} className="card bg-base-100 w-96 shadow-xl ">
-      <figure>
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes" />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title text-white underline p-1">{project.name}</h2>
-        <p>{project.sortDescription}</p>
-        <p className='p-2 border border-gray-600  m-1'><strong>Tech-Stack : </strong> {project.techStack.map((item) =><span className="flex gap-1">{item}</span> )}</p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary p-5 m-2"><Link href={`/projects/${project.id}`}>View Details</Link></button>
+    <div className="flex flex-col gap-4 p-6 bg-[#1A1A19] text-[#F6FCDF] rounded-lg shadow-lg border border-gray-700 transition-transform hover:scale-105 hover:shadow-xl">
+      <h2 className="text-2xl font-bold text-[#31511E] underline">
+        {project.name}
+      </h2>
+      <p className="text-sm text-gray-400">{project.sortDescription}</p>
+      <div className="flex flex-col gap-2">
+        <strong className="text-[#31511E]">Tech Stack:</strong>
+        <div className="flex flex-wrap gap-2">
+          {project.techStack.map((item, index) => (
+            <span
+              key={index}
+              className="px-3 py-1 bg-[#31511E] text-[#F6FCDF] rounded-md text-sm font-medium"
+            >
+              {item}
+            </span>
+          ))}
         </div>
       </div>
+      <div className="flex justify-end mt-4">
+        <Link href={`/projects/${project.id}`}>
+          <button className="px-5 py-2 bg-[#859F3D] text-[#1A1A19] rounded-md font-medium hover:bg-[#31511E] hover:text-[#F6FCDF] transition-colors">
+            View Details
+          </button>
+        </Link>
+      </div>
     </div>
- </>
   );
 };
 
